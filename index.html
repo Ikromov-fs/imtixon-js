@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body >
+    <main>
+        <section>
+            <div class="section container">
+                <h2 class="section__h2">Pizza order</h2>
+                <form class="form-wropper" id="form" >
+                    <label class="form-wropper__label">
+                        <input id="userName" required class="form-wropper__input" type="text" placeholder="User name">
+                    </label>
+                    <label>
+                        <input id="phoneNumber" required class="form-wropper__input" type="number"
+                            placeholder="Phone number">
+                    </label>
+                    <label>
+                        <input id="userAddress" required class="form-wropper__input" type="text"
+                            placeholder="User address">
+                    </label>
+                    <div class="form-wropper__div">
+                        <p class="form-wropper__div__p">Dough thickness:</p>
+                        <select id="select" class="select">
+                            <option value="none">None</option>
+                            <option value="thin">Thin</option>
+                            <option value="medium">Medium</option>
+                            <option value="thick">Thick</option>
+                        </select>
+                    </div>
+                    <div class="size-div">
+                        <p> Size :</p>
+                        <label class="label-size">
+                            <input type="radio" name="radio" required>
+                            <div>
+                                <p>25cm</p>
+                            </div>
+                        </label>
+                        <label class="label-size">
+                            <input type="radio" name="radio">
+                            <div>
+                                <p>30cm</p>
+                            </div>
+                        </label>
+                        <label class="label-size">
+                            <input type="radio" name="radio">
+                            <div>
+                                <p>35cm</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="On-pizza">
+                        <p class="On-pizza__p">on Pizza</p>
+                        <div class="checked-div">
+                            <div>
+                                <label class="checked-label">
+                                    <input type="checkbox" required>
+                                    <p>Tomato</p>
+                                </label>
+                                <label class="checked-label">
+                                    <input type="checkbox">
+                                    <p>Turkay meat</p>
+                                </label>
+                                <label class="checked-label">
+                                    <input type="checkbox">
+                                    <p>Olive</p>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checked-label">
+                                    <input type="checkbox">
+                                    <p>Piskledcucumber</p>
+                                </label>
+                                <label class="checked-label">
+                                    <input type="checkbox">
+                                    <p>Mushroom </p>
+                                </label>
+                                <label class="checked-label">
+                                    <input type="checkbox">
+                                    <p>Horse meat</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="On-pizza__p">add</p>
+                        <div class="checked-end">
+                            <label class="checked-label">
+                                <input type="checkbox">
+                                <p>pepper</p>
+                            </label>
+                            <label class="checked-label">
+                                <input type="checkbox">
+                                <p>Sausages</p>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="save-btn" id="save">save</button>
+                </form>
+                <ul class="rezult-ul" id="rezultUser"></ul>
+                <div class="modal">
+                    <div class="modal-div">
+                        <h2> Buyurtma qabul qilindi!</h2>
+                        <button class="btn-ok">ok</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

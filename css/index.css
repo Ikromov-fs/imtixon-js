@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../image/pizza.jpg");
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    max-width: 720px;
+    padding: 20px;
+    margin: auto;
+}
+
+.section__h2{
+    display: flex;
+    justify-content: center;
+}
+.form-wropper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.form-wropper__input{
+   padding: 5px 10px; 
+}
+.form-wropper__div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.form-wropper__div__p{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.select{
+    padding: 4px 8px;
+}
+.size-div{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+}
+.label-size{
+    display: flex;
+    gap: 2px;
+}
+
+.checked-div{
+    display: flex;
+}
+
+.checked-end{
+    display: flex;
+    gap: 18px;
+
+}
+
+.checked-label{
+    display: flex;
+    gap: 8px;
+    margin: 10px 10px;
+}
+.On-pizza{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.On-pizza__p{
+    font-size: 18px;
+    font-weight: 700;
+}
+.save-btn{
+    padding: 3px 25px;
+}
+.save-btn:active{
+    background: yellow;
+    border: none;
+}
+
+.rezult-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    list-style: none;
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    background:rgba(244, 164, 96, 0.8);
+}
+
+.modal{
+   position: fixed;
+   max-width: 100%;
+   display: none;
+}
+.modal-active{
+    display: block;
+}
+.modal-div{
+    position: relative;
+    position: fixed;
+    max-width: 100%;
+    background-color:yellow;
+    top: 10px;
+    right: 20px;
+    border-radius: 10px;
+    
+}
+.btn-ok{
+    padding: 3px 6px;
+    position: absolute;
+    left: 40%;
+    top: 30px;
+}
+.btn-ok:active{
+    background:turquoise;
+}
+
